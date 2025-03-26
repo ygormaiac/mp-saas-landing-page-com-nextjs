@@ -1,103 +1,71 @@
 import Image from "next/image";
+import logo from "./assets/logo.svg";
+import womanImg from "./assets/woman.svg";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main>
+      <section className="container mx-auto text-center mb-24">
+        <nav className="flex justify-between py-4 items-center">
+          <Image src={logo} alt="Logo Livro SaaS" />
+          <div className="flex items-center gap-4">
+            <Button variant="link">Funcionamento</Button>
+            <Button variant="link">Preço</Button>
+            <Button variant="outline">Login</Button>
+          </div>
+        </nav>
+          <h1 className="text-6xl font-bold mt-16">Simplifique os seus estudos</h1>
+          <p className="text-lg mt-4 text-gray-500 max-w-3xl mx-auto">Deixe que nós fazemos a curadoria para você. Assine nossa plataforma e receba todos os meses um ebook novo de programação.</p>
+          <form className="mt-16">
+            <div className="flex justify-center gap-2">
+              <Input placeholder="Coloque o seu email" type="text" className="max-w-sm bg-white border border-gray-300 h-10" />
+              <Button className="h-10">Assine Agora</Button>
+            </div>
+            <p className="text-xs mt-5 text-muted-foreground">Comece sua assinatura agora mesmo. Cancele quando quiser. </p>
+          </form>
+      </section>
+      <section className="bg-white mx-auto text-center py-16">
+        <h2 className="text-4xl font-bold">Como funciona?</h2>
+        <div className="flex justify-evenly m-3 items-center">
+          <Image src={womanImg} alt="Woman holding boxes" width={392} height={392} />
+          <ul className="text-gray-500 flex flex-col gap-4 text-lg">
+            <li>Acesso a 1 ebook por mês</li>
+            <li>Curadoria especial</li>
+            <li>Cancele quando quiser</li>
+          </ul>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+      <section className="mx-auto text-center my-22">
+        <h2 className="font-bold text-4xl">Preço simples e transparente</h2>
+        <p className="text-md mt-8 text-gray-500 max-w-3xl mx-auto">Pra que inúmeros planos quando nós sabemos exatamente o que é melhor para você? Assine o nosso plano mensal Pro Premium VIP e garanta mensalmente um ebook novo de programação. E por menos de um café por dia. </p>
+        <div className="bg-white rounded-3xl max-w-md mx-auto mt-16 p-10 flex flex-col gap-4 text-left border border-gray-300">
+          <h3 className="text-2xl font-semibold">Plano Pro Premium VIP</h3>
+          <p className="text-sm text-gray-500">Tudo que você precisa para seus estudos</p>
+          <div className="flex items-baseline mt-8">
+            <p className="font-semibold text-4xl">R$29</p>
+            <span className="text-xl text-gray-500">/mês</span>
+          </div>
+          <ul className="flex flex-col gap-4 mt-4 text-sm text-gray-500">
+            <li>1 ebook por mês</li>
+            <li>Curadoria especial</li>
+            <li>Acesso ilimitado</li>
+            <li>Cancele a qualquer momento</li>
+          </ul>
+          <Button className="h-10 mt-10">Assine Agora</Button>
+        </div>
+      </section>
+      <section className="bg-white mx-auto text-center py-22">
+        <h2 className="text-4xl font-bold">Pronto Para Mudar Sua Vida?</h2>
+        <p className="text-lg text-gray-500 my-6">Faça como milhares de outras pessoas. Assine nosso produto e tenha garantido seus estudos</p>
+        <Button className="h-10 mt-6 w-sm">Assine Agora</Button>
+        <p className="text-xs text-muted-foreground mt-5">Comece sua assinatura agora mesmo. Cancele quando quiser.</p>
+        <footer className="flex justify-center flex-col items-center mt-42">
+        <Image src={logo} alt="Logo Livro SaaS" className="h-auto block" />
+        <p>© 2024 LivroSaaS. Todos os direitos reservados.</p>
       </footer>
-    </div>
+      </section>
+    </main>
   );
 }
