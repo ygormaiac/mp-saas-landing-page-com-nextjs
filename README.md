@@ -1,83 +1,61 @@
-# SaaS Landing Page com Next.js e Shadcn/UI
+# SaaS Landing Page com Next.js e Shadcn/UI (Project in progress)
 
-Crie uma landing page para um SaaS com o estilo de design do Notion usando **Next.js**, **Tailwind CSS** e **Shadcn/UI**.
+Create a landing page for a SaaS with Notion design style using **Next.js**, **Tailwind CSS** and **Shadcn/UI**.
 
-## 🤓 Antes de começar
+## 🔨 Requirements
 
-Este mini-projeto será desenvolvido do zero — a transposição do design faz parte do desafio! Não há arquivos iniciais. Comece com um novo projeto **Next.js**.
+- **Navbar:** Implement a simple Navbar with:
+- Logo on the left.
+- Navigation links (How it works, Price, Login) on the right.
+- Follow Figma's design.
 
-## 🔨 Requisitos
+- **Hero Section:** Create the main "Hero" section with:
+- Title: **"Simplify Your Studies"**.
+- Explanatory subtitle about the platform.
+- Input field for email.
+- Call to action button (CTA) **"Subscribe Now"**.
+- Follow Figma's design.
 
-- **Navbar:** Implemente uma Navbar simples com:
-    - Logotipo à esquerda.
-    - Links de navegação (Funcionamento, Preço, Login) à direita.
-    - Siga o design do Figma.
-
-- **Seção Hero:** Crie a seção principal "Hero" com:
-    - Título: **"Simplifique Seus Estudos"**.
-    - Subtítulo explicativo sobre a plataforma.
-    - Campo de input para e-mail.
-    - Botão de call to action (CTA) **"Assine Agora"**.
-    - Siga o design do Figma.
-
-> 👀 **Dicas**:
+> 👀 **Tips**:
 >
-> - Use o componente `Input` do `shadcn/ui` para o campo de e-mail.
-> - Use o componente `Button` do `shadcn/ui` para todos os botões.
+> - Use the `shadcn/ui` `Input` component for the email field.
+> - Use the `shadcn/ui` `Button` component for all buttons.
 
-- **Seção "Como Funciona":** Explique o funcionamento em três etapas:
-    - Acesso a um ebook por mês.
-    - Curadoria especial.
-    - Cancelamento a qualquer momento.
-    - Siga o design do Figma.
+- **"How it Works" Section:** Explain how it works in three steps:
+- Access to one ebook per month.
+- Special curation.
+- Cancellation at any time.
+- Follow Figma's design.
 
-- **Seção de Preços:** Crie a seção de preços com destaque para o plano "Pro Premium VIP" (R$ 29/mês) incluindo:
-    - 1 ebook por mês.
-    - Curadoria especial.
-    - Acesso ilimitado.
-    - Cancelamento a qualquer momento.
+- **Pricing Section:** Create a pricing section highlighting the "Pro Premium VIP" plan (R$29/month) including:
+- 1 ebook per month.
+- Special curation.
+- Unlimited access.
+- Cancel at any time.
 
-- **Seção Final com CTA:** Incentive a assinatura com:
-    - Título: **"Pronto Para Mudar Sua Vida?"**.
-    - Texto de suporte.
-    - Botão de CTA.
+- **Final Section with CTA:** Encourage subscription with:
+- Title: **"Ready to Change Your Life?"**.
+- Supporting text.
+- CTA button.
 
-- **Rodapé:** Implemente um rodapé simples com:
-    - Logotipo da empresa.
-    - Copyright e informações legais.
+- **Footer:** Implement a simple footer with:
+- Company logo.
+- Copyright and legal information.
 
-- **Design Responsivo:** Adapte o design para dispositivos móveis:
-    - Crie um menu mobile com `shadcn/ui`.
-    - Siga o design do Figma.
+- **Responsive Design:** Adapt the design for mobile devices:
+- Create a mobile menu with `shadcn/ui`.
+- Follow Figma's design.
 
+## 🎨 Suggested Design
 
-## 🔨 Desafio Extra
-
-- **Animações:** Adicione animações de transição suave ao rolar a página.
-
-## 🎨 Design Sugerido
-
-Siga o design no Figma para este mini-projeto.
+Follow the design in Figma for this mini-project.
 
 ### Figma
 
 🔗 [Link do design](https://www.figma.com/community/file/1423775673058225189/mini-projeto-saas-landing-page-com-next-js)
 
-## 👉🏽 Sobre este Mini-Projeto
+## 👉🏽 Next steps
 
-### O que você irá praticar:
-
-#### React
-
-- Criar e organizar componentes modulares.
-- Estilização com Next.js.
-
-#### Tailwind CSS
-
-- Estilizar componentes de forma responsiva.
-- Trabalhar com grids e/ou flexbox para layout.
-
-### Pré-requisitos
-
-- Conhecimento básico de **Next.js**.
-- Experiência com **Tailwind CSS**.
+- Create login page
+- Create request to send data
+- Create application dashboard page
