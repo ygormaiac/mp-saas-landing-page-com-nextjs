@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SaaS Landing Page com Next.js e Shadcn/UI (Project in progress)
 
-## Getting Started
+Create a landing page for a SaaS with Notion design style using **Next.js**, **Tailwind CSS** and **Shadcn/UI**.
 
-First, run the development server:
+## 🔨 Requirements
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Navbar:** Implement a simple Navbar with:
+- Logo on the left.
+- Navigation links (How it works, Price, Login) on the right.
+- Follow Figma's design.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Hero Section:** Create the main "Hero" section with:
+- Title: **"Simplify Your Studies"**.
+- Explanatory subtitle about the platform.
+- Input field for email.
+- Call to action button (CTA) **"Subscribe Now"**.
+- Follow Figma's design.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> 👀 **Tips**:
+>
+> - Use the `shadcn/ui` `Input` component for the email field.
+> - Use the `shadcn/ui` `Button` component for all buttons.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **"How it Works" Section:** Explain how it works in three steps:
+- Access to one ebook per month.
+- Special curation.
+- Cancellation at any time.
+- Follow Figma's design.
 
-## Learn More
+- **Pricing Section:** Create a pricing section highlighting the "Pro Premium VIP" plan (R$29/month) including:
+- 1 ebook per month.
+- Special curation.
+- Unlimited access.
+- Cancel at any time.
 
-To learn more about Next.js, take a look at the following resources:
+- **Final Section with CTA:** Encourage subscription with:
+- Title: **"Ready to Change Your Life?"**.
+- Supporting text.
+- CTA button.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Footer:** Implement a simple footer with:
+- Company logo.
+- Copyright and legal information.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Responsive Design:** Adapt the design for mobile devices:
+- Create a mobile menu with `shadcn/ui`.
+- Follow Figma's design.
 
-## Deploy on Vercel
+## 🎨 Suggested Design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Follow the design in Figma for this mini-project.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Figma
+
+🔗 [Link do design](https://www.figma.com/community/file/1423775673058225189/mini-projeto-saas-landing-page-com-next-js)
+
+## 👉🏽 Next steps
+
+- Create login page
+- Create request to send data
+- Create application dashboard page
